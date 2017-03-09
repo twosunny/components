@@ -31,6 +31,8 @@ public class TestController {
 		model.addAttribute("firstName", "Choi");
 		model.addAttribute("lastName", "Woosun");
 		
+		System.out.println("sessionId : " + request.getSession().getId());
+		
 		return "test";
 	}
 	
